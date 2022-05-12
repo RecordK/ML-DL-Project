@@ -12,7 +12,7 @@
 
 ##### **사이트 선정**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/967d15da-fbf4-4a23-a36d-02c04be816fb/Untitled.png)
+
 
 - 우리나라 커뮤니티 사이트 중 가장 큰 커뮤니티 사이트인 dcinside 선정하였습니다.
 
@@ -29,7 +29,7 @@
 
 ##### **데이터 라벨링**
 
-[화면 기록 2022-05-12 오후 8.35.14.mov](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38453973-3a38-41c6-9fa5-4a548ad7ff82/화면_기록_2022-05-12_오후_8.35.14.mov)
+
 
 - 인기 게시물의 댓글을 크롤링하여서 욕설인 것과 아닌 것을 라벨링하였습니다.
 
@@ -37,19 +37,17 @@
 
 ---
 
-![konlpy2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/295cfaff-fa3f-423f-8218-114a0c6a569d/konlpy2.png)
+
 
 데이터에 포함되어 있는 특수문자를 re 라이브러리로 제거하고 불필요한 조사를 제거한 뒤 **KONLPY** 라이브러리를 활용하여 의미가 있는 단어로 나누었습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfb42d02-4a38-4484-9a73-f0f1497aca78/Untitled.png)
+
 
 **TensorFlow**를 활용하여 단어를 토큰화 처리 하였습니다.
 
 #### 4. MODEL SELECTION
 
 ---
-
-![스크린샷 2022-05-12 오후 9.53.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f24b02b-e8ed-4a3e-97c0-f739c4a3e031/스크린샷_2022-05-12_오후_9.53.55.png)
 
 - 기존의 순환 신경망 분석(RNN)을 개선한 LSTM으로 두개의 층과 Dense층으로 쌓았고 활성화 함수는 sigmoid를 사용하였습니다.
 
